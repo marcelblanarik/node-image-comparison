@@ -35,7 +35,6 @@ fs.readdir(sourceImages, function(err, files) {
         }
         fs.writeFileSync(`${diffImages}/${file}`, PNG.sync.write(diff));
       }
-
       console.log(`${file}: ${difference} pixels different`);
     }
   });
